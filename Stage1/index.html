@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Profile picture (profilePicture)
+ Full Name (fullName)
+Job Title (jobTitle)
+Short Bio (shortBio)
+Current Location (currentLocation)
+Email Address (emailAddress)
+Social Links
+Current Time in UTC -->
+    <main class="profile-card">
+        <div class="wrapper">
+            <div class="img-container">
+                <img src="person-1.jpeg" alt="profilePicture" data-testid="profilePicture"/>
+                <h1 data-testid="fullName" >Aleem Abdulmuheez Ayomide</h1>
+                <h3 data-testid="jobTitle" >Frontend Developer</h3>
+                <p data-testid="currentLocation">Lagos, Nigeria</p>
+            </div>
+            <p data-testid="shortBio">
+                I'm a frontend developer passionate about creating visually appealing and user-friendly interfaces.
+            </p>
+            
+      <p data-testid="emailAddress">aleemabdulmuheez@gmail.com</p>
+      <div class="social-links" data-testid="socialLinks">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+      </div>
+      <p data-testid="currentTimeUTC" id="current-time">Loading...</p>
+    </div>
+        </div>
+    </main>
+    <script src="app.js" />
+</body>
+</html>
