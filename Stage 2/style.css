@@ -1,0 +1,140 @@
+body {  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    box-sizing: border-box; 
+}  
+#game{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 3rem 5rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.gameInstructions {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+/* Animations */  
+@keyframes fadeIn {  
+    from {  
+        opacity: 0;  
+    }  
+    to {  
+        opacity: 1;  
+    }  
+}  
+@keyframes fadeOut {  
+    from {  
+        opacity: 1;  
+        
+    }  
+    to {  
+        opacity: 0;  
+        
+    }  
+} 
+@keyframes celebrate {
+    0% {
+        transform: scale(1);
+        color: green;
+    }
+    50% {
+        transform: scale(1.5);
+        color: yellow;
+    }
+    100% {
+        transform: scale(1);
+        color: green;
+    }
+}
+#colorBox {  
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease;
+}  
+
+.colorOption {  
+
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeIn 0.4s ease;
+}  
+
+.colorOption:hover {  
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}  
+.gameStatus {  
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease;  
+}
+/* Correct Answer Celebration */
+.gameStatus.correct {
+    animation: celebrate 1s ease-out;
+    color: #32cd32;
+}
+
+/* Wrong Answer Fade-out */
+.gameStatus.wrong {
+    color: #ff6347;
+    animation: fadeOut 1s ease-out;
+}
+.score {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+#newGameButton {  
+
+    background-color: #ff6a00;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+.newGameButton:hover {
+    background-color: #ee0979;
+}
+@media (max-width: 600px) {  
+    #game {  
+        padding: 2rem 2rem;  
+        width: 90%;  
+    }  
+    
+    .colorOption {  
+        width: 60px;  
+        height: 60px;  
+    }  
+
+    .colorBox {  
+        width: 80px;  
+        height: 80px;  
+    }  
+
+    #newGameButton {  
+        font-size: medium;  
+        padding: 1rem;  
+    }  
+}  
