@@ -7,6 +7,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        road: ["var(--font-road-rage)", "cursive"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        geist: ["var(--font-geist-sans)", "sans-serif"],
+        geistMono: ["var(--font-geist-mono)", "monospace"],
+        jeju: ["Jeju Myeongjo", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -15,3 +22,17 @@ export default {
   },
   plugins: [],
 };
+
+
+// fontFamily: {
+//   road: ["var(--font-road-rage)", "cursive"],
+//   roboto: ["var(--font-roboto)", "sans-serif"],
+//   geist: ["var(--font-geist-sans)", "sans-serif"],
+//   geistMono: ["var(--font-geist-mono)", "monospace"],
+//   jeju: ["Jeju Myeongjo", "serif"],
+// },
+// fontFamily: {
+//   road: ['Road Rage', 'cursive'],
+//   jeju: ['Jeju Myeongjo', 'serif'],
+//   roboto: ['Roboto', 'sans-serif'],
+// },

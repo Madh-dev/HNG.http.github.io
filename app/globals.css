@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 :root {
   --background: #ffffff;
@@ -9,13 +13,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #02191D;
+    --foreground: #B3B3B3;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[var(--background)] text-[var(--foreground)] font-roboto text-base;
+  /* font-family: 'Jeju Myeongjo', serif; */
 }
